@@ -11,10 +11,6 @@ export function Btn() {
       <button onClick={handleClick}>Click Me</button>
       <button onClick={handleClick}>Click Me</button>
       <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
     </div>
   );
 }

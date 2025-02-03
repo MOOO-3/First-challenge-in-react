@@ -21,7 +21,7 @@ function App() {
             {/* div Post */}
 
             {/* div Btn */}
-            <div style={{ width: "57%" }}>
+            <div style={{ width: "65%" }}>
               <Btn />
               <Btn />
               <Btn />
