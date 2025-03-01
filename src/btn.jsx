@@ -1,16 +1,13 @@
 export function Btn() {
-  const handleClick = () => {
-    alert("hi");
-  };
-
   return (
     <div className="btn">
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
-      <button onClick={handleClick}>Click Me</button>
+      <p>hi</p>
+
+      <p>test</p>
+
+      <div>
+        <p>testsdff</p>
+      </div>
     </div>
   );
 }

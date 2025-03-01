@@ -1,10 +1,13 @@
-export function Post() {
+export function Post({ name, age, bio }) {
   return (
     <div>
       <div className="content">
-        <h1>Content</h1>
+        <h1>{name}</h1>
         <hr />
-        <p>Some content blablabla, some content blablabla.</p>
+        <p> i'm {age}</p>
+        <div className="bio">
+          <p>{bio}</p>
+        </div>
       </div>
     </div>
   );

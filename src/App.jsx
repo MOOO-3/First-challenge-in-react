@@ -4,6 +4,28 @@ import { Post } from "./post.jsx";
 import { Btn } from "./btn.jsx";
 
 function App() {
+  const posts = [
+    {
+      id: 1,
+      name: "Mohamed",
+      age: 25,
+    },
+
+    {
+      id: 2,
+      name: "Ahmed",
+      age: 19,
+    },
+
+    {
+      id: 3,
+      name: "Essam",
+      age: 18,
+    },
+  ];
+  const postsList = posts.map((post) => {
+    return <Post key={post.id} name={post.name} age={post.age} />;
+  });
   return (
     <>
       <div>
@@ -14,16 +36,16 @@ function App() {
           <div style={{ display: "flex", width: "80%" }}>
             {/* div Post */}
             <div style={{ width: "70%" }}>
-              <Post />
-              <Post />
-              <Post />
+              {postsList}
+
+              {/* <Post name="Mohamed" age={25} bio="Developer" />
+              <Post name="Ahmed" age={19} bio="Art" />
+              <Post name="Essam" age={18} bio="Eng" /> */}
             </div>
             {/* div Post */}
 
             {/* div Btn */}
             <div style={{ width: "65%" }}>
-              <Btn />
-              <Btn />
               <Btn />
             </div>
             {/* div Btn */}
